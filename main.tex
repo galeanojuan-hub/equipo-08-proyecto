@@ -1,0 +1,101 @@
+\documentclass[12pt, letterpaper]{report}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noquoting]{babel}
+
+\usepackage[left=4cm,right=2cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{mathptmx}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+
+\captionsetup{font=small,labelfont=bf}
+
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\titleformat{\chapter}[block]
+  {\normalfont\bfseries\Large\centering}
+  {\thechapter.}
+  {0.5em}
+  {\MakeUppercase}
+
+\titleformat{\section}
+  {\normalfont\bfseries\large}
+  {\thesection}
+  {0.5em}
+  {\MakeUppercase}
+
+\titleformat{\subsection}
+  {\normalfont\bfseries\normalsize}
+  {\thesubsection}
+  {0.5em}
+  {}
+
+\usepackage{fancyhdr}
+\pagestyle{plain}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\setstretch{1.15}
+
+{\MakeUppercase{Universidad Pedagógica y Tecnológica de Colombia}}\\[0.2cm]
+{\MakeUppercase{Facultad de Ingeniería}}\\[0.2cm]
+{\MakeUppercase{Ingeniería de Sistemas y Computación}}\\[2.5cm]
+
+\textbf{\Large EFECTO DE UN ASISTENTE DE INTELIGENCIA ARTIFICIAL GENERATIVA EN EL TIEMPO DE DEPURACIÓN DE ERRORES DE SINTAXIS EN ESTUDIANTES NOVELES DE PROGRAMACIÓN}\\[0.5cm]
+\textit{\small Título provisional — se ajusta al formular la propuesta (Fase 3)}\\[2.5cm]
+
+\MakeUppercase{Autores}\\[0.4cm]
+Barrera Romero Juan Diego\\[0.2cm]
+Castro Gómez Lui Miguel\\[0.2cm]
+Corredor Silva Santiago\\[0.2cm]
+Galeano Tirado Juan Emmanuel
+
+\vfill
+Documento elaborado en el marco del curso Metodología de la Investigación\\[0.3cm]
+Tunja, Colombia · 2026
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+\listoftables
+\newpage
+\listoffigures
+\newpage
+
+
+\input{capitulos/planteamiento_problema.tex}
+\input{capitulos/justificacion.tex} 
+\input{capitulos/objetivos.tex}
+\input{capitulos/alcance_investigacion.tex}
+\input{capitulos/formulacion_hipotesis.tex}
+\input{capitulos/variables.tex}
+\input{capitulos/marco_referencial.tex}
+\input{capitulos/diseño_metodologico.tex} 
+\input{capitulos/resultados_discusion.tex}
+\include{capitulos/conclusiones_recomendaciones.tex}
+
+
+\bibliographystyle{texstyles/IEEEtran}
+\nocite{*}
+\bibliography{referencias}
+
+\end{document}
