@@ -1,0 +1,65 @@
+# ==========================================
+# Archivos Auxiliares y Temporales de LaTeX
+# ==========================================
+*.aux
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+
+# Bibliografía (BibTeX / Biber)
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# Compilación intermedia (latexmk, TeXworks, VS Code)
+*.fdb_latexmk
+*.fls
+*.fmt
+*.fot
+*.cb
+*.cb2
+*~
+
+# Índices y glosarios (si llegas a usarlos)
+*.idx
+*.ilg
+*.ind
+*.ist
+*.glo
+*.glg
+*.gls
+*.nlo
+*.nls
+
+# ==========================================
+# Archivos de Salida (PDF)
+# ==========================================
+# Se recomienda ignorar el PDF generado porque es un archivo binario 
+# que cambia en cada compilación y ensucia el historial de Git.
+*.pdf
+
+# ==========================================
+# Editor y Sistema Operativo
+# ==========================================
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Archivos de respaldo de editores (TeXworks, Vim, Emacs, etc.)
+*.bak
+*.sav
+*.swp
+
+# Archivos ocultos de SO
+.DS_Store
+Thumbs.db
